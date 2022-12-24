@@ -1,0 +1,11 @@
+what is CDN?
+content delivery network is used for quick transmission of assets such as the files, images and videos. this acts of the group of distruibuted servers for providing internet contents.
+
+what is cross origin?
+cross origin is header based mechansim which will be utilized for allowing the server to indicate the origin of resources. 
+then, it will be utilized for permitting the resource to be loaded. 
+
+What is the difference between async and differ?
+
+async will be allowing the script to run as soon as the script is loaded without waiting for page to be loaded. 
+differ will only run after the page is been loaded. 
