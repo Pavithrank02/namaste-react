@@ -1,3 +1,5 @@
+What is Emmet?
+Emmet is a tool kit utilized for abbriviating the html tags. 
 what is CDN?
 content delivery network is used for quick transmission of assets such as the files, images and videos. this acts of the group of distruibuted servers for providing internet contents.
 
@@ -9,3 +11,10 @@ What is the difference between async and differ?
 
 async will be allowing the script to run as soon as the script is loaded without waiting for page to be loaded. 
 differ will only run after the page is been loaded. 
+
+What is difference between react.development.js and react.production.js files via CDN?
+development.js is utilized for development reasons and production mode is utilized in later for running in client area.
+
+What is diference between React and ReactDOM
+
+react is used for developing the UI and reactDOM is used for actualluy rendering the code. 
