@@ -1,0 +1,12 @@
+{
+  "explorer.excludeGitIgnore": true,
+  "search.useParentIgnoreFiles": true,
+  "gitlens.blame.ignoreWhitespace": true,
+  "git.ignoreLegacyWarning": true,
+  "git.ignoreLimitWarning": true,
+  "git.ignoreRebaseWarning": true,
+  "git.ignoreMissingGitWarning": true,
+  "git.ignoreSubmodules": true,
+  "git.ignoreWindowsGit27Warning": true,
+  "search.useGlobalIgnoreFiles": true
+}
