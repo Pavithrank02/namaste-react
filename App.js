@@ -1,12 +1,17 @@
 
 import React from "react";
-import ReactDOM  from "react-dom/client";
-const heading = React.createElement("h1", {
-id: "title",
-}, "Namaste");
-const heading2 = React.createElement("h2", {
-id: "title",
-}, "Hello");
-const container = React.createElement("div",{id:"container"}, [heading, heading2]);
+import ReactDOM from "react-dom/client";
+const heading = (
+  <h1>Namaste</h1>
+  )
+const HeaderComponent = () => {
+  return (
+    <div>
+      {heading}
+      <h1>Namaste React Functional Components</h1>
+      <h2>Namaste h2</h2>
+    </div>
+  )
+}
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(<HeaderComponent />);
