@@ -83,7 +83,25 @@ Link{
   left: 50px;
   background-color: #dad27d;
 }
+.log{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 20vw;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.MuiGrid-container{
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin-left: 35%;
+}
+.form-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
+}
 .logo-image {
   height: 135px;
   width: 135px;
