@@ -27,6 +27,9 @@
   
 }
 .card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 200px;
   border: 1px solid black;
   padding: 10px;
@@ -65,4 +68,8 @@ Link{
 }
 .text-xs {
   font-size: 0.75rem;
+}
+.form-sign{
+  display: flex;
+  flex-direction: column;
 }

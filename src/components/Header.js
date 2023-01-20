@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Logo from "../assets/image/foodvilla.png";
 import { Link } from "react-router-dom";
+import SignupForm from "./Login";
 
 // SPA - Single Page Application???
 // Client Side Routing
@@ -33,7 +34,7 @@ const Header = () => {
         </ul>
       </div>
       {isLoggedIn ? (
-        <button onClick={() => setIsLoggedIn(false)}>Logout</button>
+       <Link to="/signUp"><button onClick={() => setIsLoggedIn(false)}>Logout</button> </Link> 
       ) : (
         <button onClick={() => setIsLoggedIn(true)}>Login</button>
       )}
