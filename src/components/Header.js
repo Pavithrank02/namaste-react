@@ -11,32 +11,49 @@ const Title = () => (
     <img className="logo" alt="logo" src={Logo} />
   </a>
 );
+export const LocateMe = () => {
+	return (
+		<div className="locate-me">
+			<span className="_1tcx6 _34oCb">
+				<span className="_3odgy">Shalimar Bag</span>
+			</span>
+			<span className="_3HusE">Mukherjee Nagar, Delhi, India</span>
+			<span className="icon-downArrow kVKTT" />
+			<div className="_21VC0 sPr5A" />
+		</div>
+	);
+};
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
+    
     <div className="header">
       <Title />
+      <LocateMe />
       <div className="nav-items">
         <ul>
+        <Link to="/" className='text-link'>
           <li>
-            <Link to="/">Home</Link>
+                Home
           </li>
-
-          <Link to="/about">
+          </Link>
+          <Link to="/about" className='text-link'>
             <li>About</li>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" className='text-link'>
             <li>Contact</li>
           </Link>
-          <li>Cart</li>
+          <Link to="/cart" className='text-link'>
+            <li>Cart</li>
+          </Link>
         </ul>
       </div>
       {isLoggedIn ? (
-       <Link to="/signUp"><button onClick={() => setIsLoggedIn(false)}>Logout</button> </Link> 
+       <Link to="/signUp" ><button onClick={() => setIsLoggedIn(false)} className='btn'>Logout</button> </Link> 
       ) : (
-        <button onClick={() => setIsLoggedIn(true)}>Login</button>
+        <button onClick={() => setIsLoggedIn(true)}className='btn'>Login</button>
       )}
     </div>
   );

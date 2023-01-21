@@ -1,6 +1,7 @@
 import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
+import Button from '@mui/material/Button';
 import "../../index.css"
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -42,14 +43,16 @@ const Body = () => {
         <input
           type="text"
           className="search-input"
-          placeholder="Search"
+          placeholder="   Search...."
           value={searchText}
           onChange={(e) => {
             setSearchText(e.target.value);
           }}
         />
-        <button
+        <Button 
+          variant="contained"
           className="search-btn"
+          size="medium"
           onClick={() => {
             //need to filter the data
             const data = filterData(searchText, allRestaurants);
@@ -58,7 +61,7 @@ const Body = () => {
           }}
         >
           Search
-        </button>
+        </Button >
       </div>
       <div className="restaurant-list">
         {/* You have to write logic for NO restraunt fount here */}
@@ -67,6 +70,8 @@ const Body = () => {
             <Link
               to={"/restaurant/" + restaurant.data.id}
               key={restaurant.data.id}
+              style={{ textDecoration: 'none' }}
+              className='text-link'
             >
               <RestaurantCard {...restaurant.data} />
             </Link>

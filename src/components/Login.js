@@ -33,7 +33,7 @@ const LoginPage = () => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      xs={4}
+      xs={3}
     >
       <Typography variant="h4" marginTop={2} sx={{ fontWeight: "Bold" }}>
         Login
