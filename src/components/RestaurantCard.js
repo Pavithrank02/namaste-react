@@ -13,7 +13,7 @@ const RestrauntCard = ({
 }) => {
 	// const { header } = aggregatedDiscountInfo;
 	return (
-		<div className="inner-card">
+		<div className=" w-56 p-5 m-5 shadow-lg">
 			<div className="card-width">
 				<div className="resturant-img">
 					<img alt="Aggarwal Sweets India" src={IMG_CDN_URL + cloudinaryImageId} />
@@ -34,7 +34,7 @@ const RestrauntCard = ({
 				)}
 
 				<div className="res-detail">
-					<div className="res-name">{name}</div>
+					<div className="font-bold">{name}</div>
 					<div className="res-cusines">{cuisines.join(", ")}</div>
 				</div>
 				<div className="res-others">

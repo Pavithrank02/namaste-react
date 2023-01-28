@@ -18,3 +18,404 @@ development.js is utilized for development reasons and production mode is utiliz
 What is diference between React and ReactDOM
 
 react is used for developing the UI and reactDOM is used for actualluy rendering the code. 
+
+
+/* html {
+	box-sizing: border-box;
+	font-family: arial, Helvetica Neue, sans-serif;
+  text-decoration: none;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.5px;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-weight: 300;
+	color: #282c3f;
+}
+.header {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+.text-link {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+	justify-content: space-between;
+	margin: 10px;
+
+}
+.btn{
+  padding: 10px;
+  margin-right: 20px;
+  background-color: #1d3394;
+  color: white;
+}
+
+.nav-items > ul{
+  list-style-type: none;
+  display: flex;
+	flex-direction: row;
+	justify-items:stretch;
+}
+.locate-me {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: -100px;
+	max-width: 300px;
+	height: 30px;
+	cursor: pointer;
+	margin-bottom: -1px;
+	padding-right: 0px;
+	position: relative;
+}
+
+/* .locate-me ._34oCb {
+	text-transform: uppercase;
+} 
+
+.locate-me ._1tcx6 {
+	font-weight: 700;
+	color: #3d4152;
+	float: left;
+}
+.locate-me ._1tcx6,
+._2z2N5 {
+	position: relative;
+}
+
+.locate-me ._3HusE {
+	display: block;
+	padding-left: 5px;
+	margin-left: 5px;
+	color: #686b78;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.locate-me .kVKTT {
+	position: absolute;
+	right: -12px;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 0.9rem;
+	color: #fc8019;
+	font-weight: 700;
+}
+.about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+}
+.img{
+  height: 400px;
+  
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 200px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 200px;
+  background: lightgrey;
+  margin: 20px;
+}
+
+.menu {
+  display: flex;
+  text-decoration: none;
+}
+Link{
+  text-decoration: none;
+}
+.form-control {
+  margin-top: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+}
+.form-sign{
+  display: flex;
+  flex-direction: column;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 60vw;
+  left: 50px;
+  background-color: #dad27d;
+}
+.log{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 20vw;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.MuiGrid-container{
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin-left: 35%;
+}
+.form-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.logo-image {
+  height: 135px;
+  width: 135px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+.form-content {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-content > label {
+  margin-bottom: 3px;
+  color: darkred;
+  font-size: 23px;
+}
+
+.form-content > input {
+  margin-bottom: 15px;
+  border: 1px solid darkred;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 150px;
+  margin: 40px;
+  height: 42px;
+  padding: 1px 2px;
+  background-color: darkred;
+  opacity: 90%;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.inner-card {
+	padding: 20px 20px;
+	border: 1px solid #fff;
+	contain: content;
+	margin: 0px 5px;
+}
+.card-width {
+	width: 254px;
+}
+
+.card-width .resturant-img {
+	background: #eef0f5;
+	width: 254px;
+	height: 160px;
+	position: relative;
+}
+
+.card-width .resturant-img > img {
+	transition: opacity 0.3s ease-out;
+	opacity: 1 !important;
+	border-style: none;
+	width: 254px;
+	aspect-ratio: auto 254 / 160;
+	height: 160px;
+}
+
+.res-detail {
+	margin-top: 14px;
+}
+.res-name {
+	font-size: 17px;
+	font-weight: 500;
+	word-break: break-word;
+}
+.res-cusines {
+	color: #686b78;
+	font-size: 13px;
+	margin-top: 4px;
+}
+.res-others {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 18px;
+	font-size: 12px;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	color: #535665;
+}
+.rating {
+	height: 20px;
+	width: 43px;
+	padding: 0 5px;
+	font-weight: 400;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.rating .icon-star {
+	font-size: 10px;
+	margin-right: 4px;
+	position: relative;
+	top: -1px;
+}
+.average-rate {
+	background-color: #db7c38;
+	color: #fff;
+}
+.good-rate {
+	background-color: #2bba3e;
+	color: #fff;
+}
+.for-ppl {
+	color: #535665;
+}
+.icon-star:before {
+	content: "\E938";
+}
+.icon-starInverse:before {
+	content: "\E93C";
+}
+.inner-card:hover {
+	border-color: #d3d5df;
+	box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.icon-starInverse:before {
+	content: "\E93C";
+}
+.icon-offer-filled:before,
+.icon-offer:before {
+	content: "\E921";
+}
+.icon-offers-coupon:before {
+	content: "\E948";
+}
+.offers {
+	border-top: 1px solid #e9e9eb;
+	padding-top: 14px;
+	margin-top: 14px;
+	color: #8a584b;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: 600;
+}
+.offers > .icon {
+	font-size: 16px;
+	width: 20px;
+	height: 16px;
+	margin-right: 4px;
+	transform: rotate3d(0);
+	-ms-transform-origin: center center;
+	transform-origin: center center;
+}
+.offers > .text {
+	font-weight: 400;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.promote {
+	color: #fff;
+	max-width: 50%;
+	text-transform: uppercase;
+	background-color: #8a584b;
+	border-color: #8a584b;
+	padding: 5px 9px 4px;
+	font-size: 13px;
+	font-weight: 500;
+	position: absolute;
+	top: 20px;
+	left: 11px;
+}
+.promote:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: inherit;
+	border-width: 9px 0 0 9px;
+	position: absolute;
+	bottom: -9px;
+	left: 0px;
+}
+.promote text {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.search-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.search-input{
+  width: 50%;
+  height: 2.5rem;
+  border: 2px solid rgb(62, 62, 189);
+  border-style: groove;
+  box-shadow: #535665;
+  font-size: larger;
+  margin-right: 05px;
+}
+.search-btn{
+  height: 2.9rem;
+  margin-left: 20px;
+} */
