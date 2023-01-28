@@ -5,14 +5,8 @@ import Button from '@mui/material/Button';
 import "../../index.css"
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import { filterData } from "../utils/helper";
 
-function filterData(searchText, restaurants) {
-  const filterData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name?.toLowerCase()?.includes(searchText.toLowerCase())
-  );
-
-  return filterData;
-}
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);

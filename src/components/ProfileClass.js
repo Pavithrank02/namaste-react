@@ -2,20 +2,16 @@ import React from "react"
 
 class Profile extends React.Component{
   
-  constructor(props){
+  constructor(props) {
     super(props);
-
+    // Create State
     this.state = {
       userInfo: {
-        name: "pavi",
-        age: 25
-      }
-
-      
-
-    }
-    
-
+        name: "Dummy Name",
+        location: "Dummy Location",
+      },
+    };
+    //console.log("Child - Constructor" + this.props.name);
   }
    changeAge = () => {
     console.log("userInfo")
@@ -27,12 +23,14 @@ class Profile extends React.Component{
     })
   }
   render() {
+    const { count } = this.state;
 
     return (
       <div>
-        <h1>{this.state.userInfo.name}</h1>
-        <h1>{this.state.userInfo.age}</h1>
-        <button onClick={this.changeAge}>change</button>
+        <h1> Profile Class Component </h1>
+        <img src={this.state.userInfo.avatar_url} />
+        <h2>Name: {this.state.userInfo.name}</h2>
+        <h2>Location: {this.state.userInfo.location}</h2>
       </div>
     )
   }

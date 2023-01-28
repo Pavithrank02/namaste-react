@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../assets/image/foodvilla.png";
 import { Link } from "react-router-dom";
 import SignupForm from "./Login";
+import useOnline from "../utils/useOnline";
 
 // SPA - Single Page Application???
 // Client Side Routing
@@ -26,6 +27,7 @@ export const LocateMe = () => {
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const isOnline = useOnline();
 
   return (
     
@@ -48,8 +50,12 @@ const Header = () => {
           <Link to="/cart" className='text-link'>
             <li>Cart</li>
           </Link>
+          <Link to="/instamart" className='text-link'>
+            <li>Instamart</li>
+          </Link>
         </ul>
       </div>
+      <h1 className='text-link'>{isOnline ? "✅" : "🔴"}</h1>
       {isLoggedIn ? (
        <Link to="/signUp" ><button onClick={() => setIsLoggedIn(false)} className='btn'>Logout</button> </Link> 
       ) : (
