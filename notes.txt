@@ -98,7 +98,13 @@ async and await?
        Assignment 7
 
 various ways to add image?
-	
+	<img src="" />
+	<img src={name} />
+	<img href="" />
+
+SPA?
+	single page application is the application which has only single page and components gets loaded. 
+
 /* html {
 	box-sizing: border-box;
 	font-family: arial, Helvetica Neue, sans-serif;

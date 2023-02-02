@@ -1,4 +1,6 @@
 const Instamart = () => {
+  
+  console.log(useState());
   return (
     <div>
       <h1>Instamart</h1>
