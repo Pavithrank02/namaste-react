@@ -18,8 +18,87 @@ development.js is utilized for development reasons and production mode is utiliz
 What is diference between React and ReactDOM
 
 react is used for developing the UI and reactDOM is used for actualluy rendering the code. 
+           Assignment 3
+What is JSX?
+	The JSX is the combination of both JS and XML which can be used for writing js code into html. JSX allows the user to integrate easy UI implementation in react. 
+
+Superpower of JSX?
+	the main usage of JSX is to integrate js in html and it helps in writing both logic and markup inside the single line of code. 
+
+Role of Type in script tag?
+	type is the attribute which can be utilized for changing the property of field been utilized. it will be identifying the type between the script. 
+
+          Assignment 4
+JSX Mandatory?
+	No, jsx is not mandatory in react as, it makes the ui and logic in simler terms, but the code can also be written without the JSX in react. it is just a syntactic sugar Eg, 
+
+ES6 Mandatory?
+	Again No, as it makes the coding content very simple and in most of the cases we need to add extra line of code to make the function ready in react component declaration. create react class needs to be added instead of react component.
+
+how can i write comments in JSX?
+	we have to open <!**  */>
+
+what is React.Fragments?
+	while writing JSX with multiple elements, if we need to return multiple elements, then we have to cover the elements and fragment lets to enable such operation. if we do <></> we can omit extra layer been form within elements. 
+
+Virtual DOM?
+	virtual DOM is the DOM which is created similar toreal DOM, were it uses diff algorithm to find difference in real dom and virtual dom to manipulate the difference and setup UI. 
+
+React Fiber?
+	React fiber is the new reconsiliation technique been adapted in react. 
+
+Why do we need keys and when?
+	keys generally identifies unique and it can be used for tracking or setting new element in large group without disturbing others, 
+
+can we use keys as index in react?
+	no, we should not use index for keys as it may negatively impact the performance. 
+
+props?react components.
+
+  Assignment 5
+
+names and default export?
+	the function which are assigned to names and only the asigned function will be exported and in default export all function assigned to the component will get exported and in * all packages, function and others will also be exported.
+
+Config.js file?
+	it is a import file which are used for storing constants which can be used in multiple components or files.
+
+React Hooks?
+	 Hooks are basically a function which return specific operation and it is specifically used in functional components for updating the UI.it can be used for isolating the reusage functional componentsl. 
+
+need for useState Hooks?
+	useState hooks are generally used for controlling the state and change in the state will update the render process.
+
+  Assignment 6
+
+what is microservices?
+	the main need for microservices is to simplify the architecture and it will be minimizing the large system in microservices and works in smaller operation than working i bulk. 
+
+need for useEffect?
+	useEffect hooks will be used for controlling the rendering process, which are sideeffects. 
+
+Optional Chaining?
+	optional chaining allows to find certain data to trigger a operation.
+
+Shimmer UI?
+	shimmer UI is the component which will be showhn during loading a real component
+
+Conditional Rendering?
+	conditional rendering is the type of rendering process whcih will be performed when it satisfies the candition.
+	{ is loggedin ? <div> : <div>}
+
+CORS?
+
+cross origin resource sharing is the API based operation where resources can be shared upon the browsers permnission,
+
+async and await?
+	the asynchronous function will be wait till the results gets return either success or rejected in the API call.
 
 
+       Assignment 7
+
+various ways to add image?
+	
 /* html {
 	box-sizing: border-box;
 	font-family: arial, Helvetica Neue, sans-serif;
