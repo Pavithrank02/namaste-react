@@ -1,4 +1,6 @@
 import { IMG_CDN_URL } from "../constants";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 
 const RestrauntCard = ({
 	name,
@@ -11,6 +13,7 @@ const RestrauntCard = ({
 	ribbon,
 	aggregatedDiscountInfo,
 }) => {
+	const { user } = useContext(UserContext);
 	// const { header } = aggregatedDiscountInfo;
 	return (
 		<div className=" w-56 p-5 m-5 shadow-lg">
@@ -50,6 +53,9 @@ const RestrauntCard = ({
 					</div>
 					<div>•</div>
 					<div>{slaString}</div>
+					<h5 className="font-bold">
+        {user.name} - {user.email}
+      </h5>
 					<div>•</div>
 					<div className="for-ppl">{costForTwoString}</div>
 					{/* <p>{aggregatedDiscountInfo?.shortDescriptionList[0].meta}</p>

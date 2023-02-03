@@ -105,6 +105,26 @@ various ways to add image?
 SPA?
 	single page application is the application which has only single page and components gets loaded. 
 
+ 				Assignment 8
+
+How to create Nested Route?
+  the necessary aspect of creating the nested route is to produce elements witin the route.
+
+order of lifecyle?
+
+there are two phases presentm, which is render phase and commit phase. 
+
+ComponentDidMount?
+
+	this is the process opf rendering the initally loaded UI in the browser.
+
+ComponentWillUnmount?
+	 we use componentwillunmount for significantly cleaningup the state. 
+
+	 Assignment 11
+
+props drilling is the process which will be critically passed from parent to child and the flow of data passing through each child will be considered to be an props drilling.
+
 /* html {
 	box-sizing: border-box;
 	font-family: arial, Helvetica Neue, sans-serif;

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Logo from "../assets/image/foodvilla.png";
 import { Link } from "react-router-dom";
 import SignupForm from "./Login";
 import useOnline from "../utils/useOnline";
+import UserContext from "../utils/UserContext";
 
 // SPA - Single Page Application???
 // Client Side Routing
@@ -28,7 +29,7 @@ export const LocateMe = () => {
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const isOnline = useOnline();
-
+  const { user } = useContext(UserContext);
   return (
     
     <div className="flex justify-between bg-pink-50 shadow-lg">
@@ -56,6 +57,7 @@ const Header = () => {
         </ul>
       </div>
       <h1 className='text-link'>{isOnline ? "✅" : "🔴"}</h1>
+      <span className="p-10 font-bold text-red-900">{user.name}</span>
       {isLoggedIn ? (
        <Link to="/signUp" ><button onClick={() => setIsLoggedIn(false)} className='btn'>Logout</button> </Link> 
       ) : (
