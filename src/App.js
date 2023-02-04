@@ -11,7 +11,8 @@ import RestaurantMenu from "./components/RestrauntMenu";
 import LoginPage from "./components/Login";
 import Shimmer from "./components/Shimmer";
 import UserContext from "./utils/UserContext";
-
+import { Provider } from "react-redux";
+import store from "./utils/store";
 const Instamart = lazy(() => import("./components/Instamart"));
 const About = lazy(() => import("./components/About"));
 
@@ -21,7 +22,7 @@ const AppLayout = () => {
     email: "pavithrank02@gmail.com",
   });
   return (
-    <>
+    <Provider store={store}>
       <UserContext.Provider
         value={{
           user: user,
@@ -32,7 +33,7 @@ const AppLayout = () => {
         <Outlet />
         <Footer />
       </UserContext.Provider>
-    </>
+    </Provider>
   );
 };
 const appRouter = createBrowserRouter([

@@ -15,7 +15,7 @@ const Title = () => (
 );
 export const LocateMe = () => {
 	return (
-		<div className="locate-me">
+		<div className="flex py-10">
 			<span className="_1tcx6 _34oCb">
 				<span className="_3odgy">Shalimar Bag</span>
 			</span>
@@ -56,7 +56,7 @@ const Header = () => {
           </Link>
         </ul>
       </div>
-      <h1 className='text-link'>{isOnline ? "✅" : "🔴"}</h1>
+      <h1 className='flex py-10'>{isOnline ? "✅" : "🔴"}</h1>
       <span className="p-10 font-bold text-red-900">{user.name}</span>
       {isLoggedIn ? (
        <Link to="/signUp" ><button onClick={() => setIsLoggedIn(false)} className='btn'>Logout</button> </Link> 
