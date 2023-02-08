@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import FoodItem from "./FoodItem";
-import { clearCart } from "../utils/cartSlice";
+import { clearCart, removeItem } from "../utils/cartSlice";
+
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
@@ -9,6 +10,9 @@ const Cart = () => {
 
   const handleClearCart = () => {
     dispatch(clearCart());
+  };
+  const removeItem = () => {
+    dispatch(removeItem());
   };
 
   return (
@@ -23,8 +27,10 @@ const Cart = () => {
       <div className="flex">
         {cartItems.map((item) => (
           <FoodItem key={item.id} {...item} />
+          
         ))}
       </div>
+      
     </div>
   );
 };
