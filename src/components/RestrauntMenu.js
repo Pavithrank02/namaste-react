@@ -19,7 +19,7 @@ const RestaurantMenu = () => {
   return !restaurant ? (
     <Shimmer />
   ) : (
-    <div className="menu">
+    <div className="flex">
       <div>
         <h1>Restraunt id: {resId}</h1>
         <h2>{restaurant?.name}</h2>
@@ -29,7 +29,7 @@ const RestaurantMenu = () => {
         <h3>{restaurant?.avgRating} stars</h3>
         <h3>{restaurant?.costForTwoMsg}</h3>
       </div>
-      <div>
+      <div className="p-5">
         <h1>Menu</h1>
         <ul>
           {Object.values(restaurant?.menu?.items).map((item) => (

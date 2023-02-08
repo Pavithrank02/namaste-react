@@ -51,9 +51,6 @@ const Header = () => {
           <Link to="/contact" className='text-link'>
             <li className=" px-2">Contact</li>
           </Link>
-          <Link to="/cart" className='text-link'>
-            <li className=" px-2">Cart</li>
-          </Link>
           <Link to="/instamart" className='text-link'>
             <li className=" px-2">Instamart</li>
           </Link>
