@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import SignupForm from "./Login";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 // SPA - Single Page Application???
 // Client Side Routing
@@ -30,6 +31,8 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const isOnline = useOnline();
   const { user } = useContext(UserContext);
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
     
     <div className="flex justify-between bg-pink-50 shadow-lg">
@@ -53,6 +56,11 @@ const Header = () => {
           </Link>
           <Link to="/instamart" className='text-link'>
             <li className=" px-2">Instamart</li>
+          </Link>
+          <Link to="/cart">
+            <li className="px-2" data-testid="cart">
+              Cart- {cartItems.length} items
+            </li>
           </Link>
         </ul>
       </div>
